@@ -1,0 +1,79 @@
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:id="@+id/linearLayout1"
+    android:layout_weight="1"
+    android:background="#00bcd4"
+    >
+
+<LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="70dp"
+        android:layout_weight="0.4" 
+        android:id="@+id/loginLinearLayout"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NombreEditText"
+        android:hint="Nombre de Usuario"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:gravity="center"
+        />
+    <EditText
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ContraseñaEditText"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:gravity="center"/>
+    <Button
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_green_light"    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SesionButton"
+        android:text="Iniciar Sesión"
+         />
+
+</LinearLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.6"
+        android:id="@+id/createAccountLayout"
+        android:gravity="center"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="¿No tienes una cuenta?,"
+    android:gravity="center" 
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:id="@+id/dontAccountText"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="Crea una aquí"   
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/dontAccountText"
+    android:id="@+id/createAccountText"
+    android:textColor="#ffffff"/>
+</RelativeLayout>
+</LinearLayout>
